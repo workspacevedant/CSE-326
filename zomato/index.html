@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+</head>
+<body>
+    <marquee><h1>Welcome to Zomato - Your Favorite Food Delivered Fast!</h1></marquee>
+    <h1>Order</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Zomato Logo" width="200">
+    <p>Welcome to Zomato! Please select your favorite dishes and place your order.</p>
+    <iframe src="https://www.zomato.com/" width="1200" height="400" title="Zomato Website"></iframe>
+    <hr>
+    <h2>Discover Restaurants</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTczEQC39-zsH_kFTxfWjo1SKYBzcmaqdebJxQ2YankYw&s=10" alt="Restaurants" width="1200">
+    <p>Explore a wide variety of restaurants and cuisines in your area. Find the best places to eat, read reviews, and make informed choices for your next meal.</p>
+    <hr>
+    <h1>Dine in</h1>
+    <img src="https://b.zmtcdn.com/data/pictures/9/21623459/6e5a31cdadae36e8c95dd66fd7c66392_featured_v2.jpg" alt="Dine In" width="1200">
+    <p>Experience the joy of dining in at your favorite restaurants. Enjoy a cozy ambiance, delicious food, and excellent service. Make reservations and plan your dining experience with ease.</p>
+    <hr>
+    <h1><marquee>Order Online</marquee></h1>
+    <h2>Menu</h2>
+    <ul>
+        <li>Pizza</li> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3yKZ3xnhKwwPFFG4HejPha_woLt9ybKzzk-sIwPjRIQ&s=10" alt="Pizza" width="200">
+        <li>Burger</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ99CL3ZFv2IX_hhVTxMA720lPcY_265CDI9AgdZzYvfw&s=10" alt="Burger" width="200">
+        <li>Pasta</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Du39Coztmc4zlSJGok0bOuulRxjslHiPcV6eGVLbig&s=10" alt="Pasta" width="200">
+        <li>Sushi</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSChKjIX9FbibS51Y93iKT1Zs9O2e2xqtnc6JYoWOxPSg&s=10" alt="Sushi" width="200">
+        <li>Salad</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLRQrVQZFWOPo6b8WNJflPaRux0tBNZKUq8EIoZ2m8vQ&s=10" alt="Salad" width="200">
+    </ul>
+    
+    <br>
+    <h2>Order Form</h2>
+    <form action="/submit-order" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="dish">Select a dish:</label>
+        <select id="dish" name="dish" required>
+            <option value="">--Please choose an option--</option>
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="pasta">Pasta</option>
+            <option value="sushi">Sushi</option>
+            <option value="salad">Salad</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Place Order">
+    </form>
+    <br>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, please reach out to us at <a href="mailto:info@zomato.com">info@zomato.com</a></p>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+</body>
+</html>
